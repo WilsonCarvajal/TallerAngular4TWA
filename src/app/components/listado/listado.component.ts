@@ -10,10 +10,10 @@ import { Objeto } from '../../models/objeto';
 })
 export class ListadoComponent implements OnInit {
 
-  public let objetos = [];
-  public let favoritos = [];
+  public  objetos = [];
+  public  favoritos = [];
 
-  // public let objetos: Objeto[];
+  // public let ob14jetos: Objeto[];
   // public let favoritos: Objeto[];
 
   constructor(private objetoService: ObjetosService) { }
@@ -23,8 +23,7 @@ export class ListadoComponent implements OnInit {
     console.log('Listado');
     this.objetoService.getObjetos().subscribe(
       resultado => {
-        this.objetos = resultado;
-        console.log(this.objetos);
+        return resultado;
       }
     );
   }
