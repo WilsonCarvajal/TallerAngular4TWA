@@ -1,0 +1,10 @@
+<p>
+  home works!
+</p>
+<mat-chip-list class="mat-chip-list-stacked">
+  <div *ngFor="let opcion of opciones" selected="true">
+    <button mat-raised-button color={{opcion.color}}>
+      {{opcion.name}}
+    </button>
+  </div>
+</mat-chip-list>
